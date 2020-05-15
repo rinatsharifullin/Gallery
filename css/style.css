@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#myList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    width: 99vw;
+    height: 99vw;
+    overflow: hidden;
+    margin: auto;
+}
+.item img{
+    width: 99vw;
+    height: 99vw;
+    object-fit: cover;
+}
+#filter-controls{
+    text-align: center;
+    padding: 3vw 0;
+    font-size: 24px;
+}
+#filter-controls a{
+    text-decoration: none;
+    color: darkblue;
+    transition: all ease 0.5s;
+    padding: 1vw;
+}
+#filter-controls a:hover{
+    box-shadow: 15px 15px 7px rgba(222, 222, 222, 0.85);
+    color: orangered;
+    border-radius: 10px;
+}
+@media only screen and (min-width: 360px){
+    .item{
+        width: 47vw;
+        height: 47vw;
+        overflow: hidden;
+        margin: auto;
+    }
+    .item img{
+        width: 47vw;
+        height: 47vw;
+        object-fit: cover;
+    }
+}
+@media only screen and (min-width: 768px){
+    .item{
+        width: 24vw;
+        height: 24vw;
+        overflow: hidden;
+        margin: auto;
+    }
+    .item img{
+        width: 24vw;
+        height: 24vw;
+        object-fit: cover;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .item{
+        width: 19vw;
+        height: 19vw;
+        overflow: hidden;
+        margin: auto;
+    }
+    .item img{
+        width: 19vw;
+        height: 19vw;
+        object-fit: cover;
+    }
+}

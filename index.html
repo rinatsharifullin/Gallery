@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+        <head>
+            <!-- Done by Rinat Sharifullun, 2020 -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Title for your webpage -->
+            <title>Image gallery</title>
+            <!-- <meta name="keywords" content=""> -->
+            <!-- <meta name="description" content=""> -->
+            <meta name="author" content="Rinat Sharifullin">
+            <!-- <link rel="shortcut icon" type="image/jpg" href="images/"> -->
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <style type="text/css"></style>
+            <!-- <script src="https://kit.fontawesome.com/87e811ac08.js" crossorigin="anonymous"></script> -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="scripts/ling-gallery-filter.js"></script>
+            <script src="scripts/script.js"></script>
+        </head>
+<!-- 300 360 384 -->
+        <body>
+            <div id="filter-controls">
+                <a data-tag="all" href="#">All</a>
+                <a data-tag="travel" href="#">Travel</a>
+                <a data-tag="pet" href="#">Pets</a>
+                <a data-tag="cycling" href="#">Cycling</a>
+            </div>
+            <div id="myList">
+                <div class="item" data-category="cycling">
+                    <img src="images/balbriggan-m.jpg" alt="" srcset="images/balbriggan-m.jpg 300w, images/balbriggan-t.jpg 360w, images/balbriggan-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="travel">
+                    <img src="images/blooming-m.jpg" alt="" srcset="images/blooming-m.jpg 300w, images/blooming-t.jpg 360w, images/blooming-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="travel">
+                    <img src="images/botanic-m.jpg" alt="" srcset="images/botanic-m.jpg 300w, images/botanic-t.jpg 360w, images/botanic-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="travel">
+                    <img src="images/botanicgarden-m.jpg" alt="" srcset="images/botanicgarden-m.jpg 300w, images/botanicgarden-t.jpg 360w, images/botanicgarden-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="travel">
+                    <img src="images/bray-m.jpg" alt="" srcset="images/bray-m.jpg 300w, images/bray-t.jpg 360w, images/bray-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="travel">
+                    <img src="images/brayhead-m.jpg" alt="" srcset="images/brayhead-m.jpg 300w, images/brayhead-t.jpg 360w, images/brayhead-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="travel">
+                    <img src="images/carrickarede-m.jpg" alt="" srcset="images/carrickarede-m.jpg 300w, images/carrickarede-t.jpg 360w, images/carrickarede-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="pet">
+                    <img src="images/cat-m.jpg" alt="" srcset="images/cat-m.jpg 300w, images/cat-t.jpg 360w, images/cat-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="pet">
+                    <img src="images/dog1-m.jpg" alt="" srcset="images/dog1-m.jpg 300w, images/dog1-t.jpg 360w, images/dog1-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="pet">
+                    <img src="images/dog2-m.jpg" alt="" srcset="images/dog2-m.jpg 300w, images/dog2-t.jpg 360w, images/dog2-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="cycling">
+                    <img src="images/howth-m.jpg" alt="" srcset="images/howth-m.jpg 300w, images/howth-t.jpg 360w, images/howth-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="cycling">
+                    <img src="images/myteam-m.jpg" alt="" srcset="images/myteam-m.jpg 300w, images/myteam-t.jpg 360w, images/myteam-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="travel">
+                    <img src="images/neftekamsk-m.jpg" alt="" srcset="images/neftekamsk-m.jpg 300w, images/neftekamsk-t.jpg 360w, images/neftekamsk-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="pet">
+                    <img src="images/phoenix1-m.jpg" alt="" srcset="images/phoenix1-m.jpg 300w, images/phoenix1-t.jpg 360w, images/phoenix1-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="pet">
+                    <img src="images/phoenix2-m.jpg" alt="" srcset="images/phoenix2-m.jpg 300w, images/phoenix2-t.jpg 360w, images/phoenix2-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="travel">
+                    <img src="images/plain-m.jpg" alt="" srcset="images/plain-m.jpg 300w, images/plain-t.jpg 360w, images/plain-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="cycling">
+                    <img src="images/refreshment-m.jpg" alt="" srcset="images/refreshment-m.jpg 300w, images/refreshment-t.jpg 360w, images/refreshment-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+                <div class="item" data-category="pet">
+                    <img src="images/swan-m.jpg" alt="" srcset="images/swan-m.jpg 300w, images/swan-t.jpg 360w, images/swan-d.jpg 384w" sizes="(max-width: 360px) 99vw, (max-width: 768px) 47vw, (max-width: 1200px) 24vw, 19vw">
+                </div>
+        
+            </div>
+                
+        </body>
+
+</html>
